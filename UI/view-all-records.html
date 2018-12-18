@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Incident and Intervention Report">
+    <meta name="keywords" content="Red-Flag, Incident, Corruption and Intervention Reports">
+    <meta name="author" content="Blessing Jerry">
+    <title>iReporter | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body id="mainbody">
+    <nav class="navbar" id="nav1">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <label for="toggle">&#9776;</label>
+        </span>
+
+        <!-- <a href="#" class="logo">iReporter</a> -->
+        <h1 class="logo"><span class="highlight-logo">i</span>Reporter</h1>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="user-profile.html" class="nav-links"><i class="fa fa-user-o"></i>Profile</a>
+            </li>
+            <li>
+                <a href="create-redflag-report.html" class="nav-links"><i class="fa fa-plus"></i>Create Record</a>
+            </li>
+            <li>
+                <a href="drafts.html" class="nav-links"><i class="fa fa-edit"></i>Drafts</a>
+            </li>
+            <li class="current">
+                 <a href="view-all-records.html" class="nav-links"><i class="fa fa-history"></i>Records</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-links"><i class="fa fa-sign-out"></i>Log out</a>
+            </li>
+
+        </ul>
+    </nav>
+
+        <section id="records-table">
+            <div class="all-reports-table">
+                <h2 class="topform-t">My Reports</h2> 
+                <!-- <a href="all-records.html"><button class="btn-sec tb-btn"><i class="fa fa-eye tb-fa"></i>View Records </button></a> -->
+                <a href="create-redflag-report.html"><button class="btn-sec tb-btn"><i class="fa fa-plus tb-fa"></i>Add New </button></a>
+                <hr>
+                <div style="overflow-x:auto;">
+                <div class="history-table">
+                    <table id="tb-draft">
+                        <tr class="tr-header">
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <!-- <th>Edit</th>
+                            <th>Delete</th> -->
+
+                        </tr>
+                        <tr>
+                            <td>RF1</td>
+                            <td><a href="view-record.html"> <p>Caught collecting bribe.</p></a></td>
+                            <td>Red Flag</td>
+                            <td>39, Eric Moore, Ogunlana Drive</td>
+                            <td id="modified-on">June 28, 2018 2.38 pm</td>
+                            <td><p id="status" class="draft">Draft</p></td>
+                            <!-- <td class="td-action"><a href="edit-redflag.html"><i class="fa fa-edit tb-edit"></i></a></td>
+                            <td class="td-action"><i class="fa fa-trash tb-delete"></i></td> -->
+                        </a></tr>
+                        <tr>
+                                <td>RF2</td>
+                                <td>
+                                  <a href="view-record.html">
+                                   
+                                    <p>Diversion of public funds.</p></a>
+                                </td>
+                             <td>Red Flag</td>
+                             <td>39, Eric Moore, Ogunlana Drive</td>
+                             <td id="modified-on">June 28, 2018 2.38 pm</td>
+                             <td><p id="status" class="success"> Resolved</p></td>
+                             <!-- <td class="td-action"><i class="fa fa-edit tb-edit"></i></td>
+                             <td class="td-action"><i class="fa fa-trash tb-delete-no"></i></td> -->
+                         </tr>
+                              </tr>
+                              <tr>
+                                <td>IT3</td>
+                                <td>
+                                  <a href="view-record.html">
+                                   
+                                    <p>Repair bad road sections at Otutekpe local government in Kogi state Nigeria</p></a>
+                                </td>
+                             <td>Intervention</td>
+                             <td>39, Eric Moore, Ogunlana Drive</td>
+                             <td id="modified-on">June 28, 2018 2.38 pm</td>
+                             <td><p id="status" class="success"> Resolved</p></td>
+                             <!-- <td class="td-action"><i class="fa fa-edit tb-edit"></i></td>
+                             <td class="td-action"><i class="fa fa-trash tb-delete-no"></i></td> -->
+                              </tr>
+                  
+                              <!--  -->
+
+                              <tr>
+                                    <td>IT4</td>
+                                    <td><a href="view-record.html">
+                                           
+                                            <p>Collapsed bridge.</p></a>
+                                        </td>
+                                     <td>Intervention</td>
+                                     <td>39, Eric Moore, Ogunlana Drive</td>
+                                     <td id="modified-on">June 28, 2018 2.38 pm</td>
+                                     <td><p id="status" class="processing"> Under Investigation</p></td>
+                                     <!-- <td class="td-action"><i class="fa fa-edit tb-edit"></i></td>
+                                     <td class="td-action"><i class="fa fa-trash tb-delete-no"></i></td> -->
+                                </tr>
+                                <tr>
+                                        <td>RF5</td>
+                                        <td><a href="view-record.html">
+                                               
+                                                <p>Caught collecting bribe.</p></a>
+                                           </td>
+                                        <td>Red Flag</td>
+                                        <td>39, Eric Moore, Ogunlana Drive</td>
+                                        <td id="modified-on">June 28, 2018 2.38 pm</td>
+                                        <td><p id="status" class="draft">Draft</p></td>
+                                        <!-- <td class="td-action"><a href="edit-redflag.html"><i class="fa fa-edit tb-edit"></i></a></td>
+                                        <td class="td-action"><i class="fa fa-trash tb-delete"></i></td> -->
+                                    </tr>
+                                    <tr>
+                                            <td>RF6</td>
+                                            <td>
+                                              <a href="view-record.html">
+                                               
+                                                <p>Diversion of public funds.</p></a>
+                                            </td>
+                                         <td>Red Flag</td>
+                                         <td>39, Eric Moore, Ogunlana Drive</td>
+                                         <td id="modified-on">June 28, 2018 2.38 pm</td>
+                                         <td><p id="status" class="success"> Resolved</p></td>
+                                         <!-- <td class="td-action"><i class="fa fa-edit tb-edit"></i></td>
+                                         <td class="td-action"><i class="fa fa-trash tb-delete-no"></i></td> -->
+                                     </tr>
+                    </table>
+                </div>
+        </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+
+    </div>
+<footer>
+    <div class="footer">
+        
+    <p>&copy; 2018. <span class="highlight-logo">i</span>Reporter</p>
+            
+    </div>
+</footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
