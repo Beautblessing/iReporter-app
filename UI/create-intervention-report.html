@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Incident and Intervention Report">
+    <meta name="keywords" content="Red-Flag, Incident, Corruption and Intervention Reports">
+    <meta name="author" content="Blessing Jerry">
+    <title>iReporter | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- <link rel="stylesheet" href="./assets/css/stylesform.css"> -->
+</head>
+
+<body id="mainbody">
+    <nav class="navbar" id="nav1">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+
+            <label for="toggle">&#9776;</label>
+        </span>
+
+        <!-- <a href="#" class="logo">iReporter</a> -->
+        <h1 class="logo"><span class="highlight-logo">i</span>Reporter</h1>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="user-profile.html" class="nav-links"><i class="fa fa-user-o"></i>Profile</a>
+            </li>
+            <li class="current">
+                <a href="create-redflag-report.html" class="nav-links"><i class="fa fa-plus"></i>Create Record</a>
+            </li>
+            <li>
+                <a href="drafts.html" class="nav-links"><i class="fa fa-edit"></i>Drafts</a>
+            </li>
+            <li>
+                <a href="view-all-records.html" class="nav-links"><i class="fa fa-history"></i>Records</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-links"><i class="fa fa-sign-out"></i>Log out</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h2>Select Category</h2>
+        <form method="get" action="/" onsubmit="location.href='/search/'+encodeURIComponent(this.s.value).replace(/%20/g,'+')+'/';return false;">
+            <select onChange="window.document.location.href=this.options[this.selectedIndex].value;">
+                <option class="option" value="create-intervention-report.html">Intervention</option>
+                <option class="option" value="create-redflag-report.html">Red-Flag</option>
+            </select>
+
+        </form>
+
+    </div>
+    <!-- form -->
+    <div id="mainbd">
+        <h2>Create Intervention</h2>
+        <div class="row">
+            <div class="col-75">
+                <div class="container1">
+                    <form id="rep">
+                        <!-- <form action="/action_page.php"> -->
+
+                        <div class="col-100">
+                            <label for="state" class="label-title">Type of intervention</label>
+                            <input type="text" list="interventions" />
+                            <datalist id="interventions">
+                                <option>Flood</option>
+                                <option>Fire outbreak</option>
+                                <option>Road Accident</option>
+                                <option>Repair bad roads</option>
+                                <option>Water</option>
+                                <option>Health</option>
+                                <option>Education</option>
+                                <option>Power</option>
+                            </datalist>
+                        </div>
+                        <!-- <select class="form-input" id="level">
+                                <option value="flood">Flood</option>
+                                <option value="fire">Fire</option>
+                                <option value="accident">Accident</option>
+                                <option value="road">Repair bad roads</option>
+                                <option value="water">Water</option>
+                                <option value="health">Health</option>
+                                <option value="education">Education</option>
+                                <option value="electricity">Electricity</option>
+                            </select> -->
+                     
+                        <!-- 1 -->
+                        <div class="col-100">
+                            <label class="label-title">Please select government agency</label>
+                            <select class="form-input level">
+                                <option value="1">Broadcasting Organisation of Nigeria (BON)</option>
+                                <option value="2">Broadcasting Organisation of Nigeria (BON)</option>
+                                <option value="3">Bureau of Public Procurement (BPP)</option>
+                                <option value="4">Central Bank of Nigeria (CBN)</option>
+                                <option value="5">Computer Professionals Registration Council of Nigeria</option>
+                                <option value="6">Consumer Protection Council (CPC)</option>
+                                <option value="7">Corporate Affairs Commission (CAC)</option>
+                                <option value="8">Defence Intelligence Agency (DIA)</option>
+                                <option value="9">Department of Petroleum Resources (DPR)</option>
+                                <option value="10">Economic and Financial Crimes Commission (EFCC)</option>
+                                <option value="11">Energy Commission of Nigeria (ECN)</option>
+                                <option value="12">Federal Aviation Authority of Nigeria (FAAN)</option>
+                                <option value="13">Federal Civil Service Commission</option>
+                                <option value="14">Federal Environmental Protection Agency (FEPA)</option>
+                                <option value="15">Federal Housing Authority (FHA)</option>
+                                <option value="16">Federal Inland Revenue Service (FIRS)</option>
+                                <option value="17">Federal Mortgage Bank of Nigeria (FMBN) Africa</option>
+                                <option value="18">Federal Radio Corporation of Nigeria (FRCN)</option>
+                            </select>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="col-100">
+                            <label class="label-title">Address (Location of Intervention)</label>
+                            <input type="text" id="address" name="address" placeholder="542 W. 15th Street">
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label class="label-title">Country</label>
+                                <select class="form-input level">
+                                    <option value="ng">Nigeria</option>
+
+                                </select>
+                            </div>
+                            <div class="col-50">
+                                <label class="label-title">City</label>
+                                <input type="text" id="city" name="city" placeholder="Lokoja">
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-100">
+
+                            <!-- <label for="fname" class="label-title">Please describe the intervention case(Give detail)</label>
+                         <div class="icon-container">
+                             <textarea class="form-input" rows="11" cols="50"></textarea>
+                         </div> -->
+                            <label for="supporting-file" class="label-title">Supporting Files</label>
+                            <p id="supfile">Images or video submissions can help us analyze your reports. Please make
+                                it into one
+                                file </p>
+
+                            <label for="imagedesc" class="label-title"><b>Upload images</b></label>
+                            <input type="file" class="form-input" name="pic" id="pic" accept="image/*,video/*">
+                        </div>
+
+                        <div class="col-100">
+                            <label for="fname" class="label-title">Please describe the intervention case(Give detail)</label>
+                            <div class="icon-container">
+                                <textarea class="form-input" rows="11" cols="100"></textarea>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                                <i class="fa fa-map-marker" style="color:red;"></i><input id="geo-btn" type="button" value="Add Geolocation"
+                                class="btn btn-sec"><br>
+                            <p id="geo-err"></p>
+                            <input id="geo-coordinates" type="text" value="" disabled="" required placeholder="Geolocation">
+                            <!-- <button class="btn btn-sec" id="btn"><i class="fa fa-map-marker" style="color:red;"></i>Add
+                                geolocation</button>
+                            <input id="geo-coordinates" type="text" value="" disabled="" required placeholder="Geolocation"> -->
+
+                        </div>
+
+                        <div class="form-footer">
+                            <a class="btn btn-sec" href="#"><i class="fa fa-send-o"></i> Submit</a>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--end form  -->
+    <footer>
+            <div class="footer">
+    
+                <p>&copy; 2018. <span class="highlight-logo">i</span>Reporter</p>
+    
+            </div>
+        </footer>
+    <script>
+        /* This showResult function is used as the callback function*/
+
+        function showResult(result) {
+            let lat = result.geometry.location.lat();
+            let long = result.geometry.location.lng();
+            let geoloc = `latitude:${lat} longitude:${long}`;
+            document.getElementById('geo-coordinates').value = geoloc;
+        }
+
+        function getLatitudeLongitude(callback, address) {
+            // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
+            address = address || 'Ferrol, Galicia, Spain';
+            // Initialize the Geocoder
+            geocoder = new google.maps.Geocoder();
+            if (geocoder) {
+                geocoder.geocode({
+                    'address': address
+                }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        callback(results[0]);
+                    }
+                });
+            }
+        }
+
+        var button = document.getElementById('btn');
+
+        button.addEventListener("click", function () {
+            var address = document.getElementById('address').value;
+            getLatitudeLongitude(showResult, address)
+        });
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
