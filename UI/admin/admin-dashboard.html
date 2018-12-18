@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Incident and Intervention Report">
+    <meta name="keywords" content="Red-Flag, Incident, Corruption and Intervention Reports">
+    <meta name="author" content="Blessing Jerry">
+    <title>iReporter | Welcome</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="mainbody">
+        <nav class="navbar" id="nav1">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <label for="toggle">&#9776;</label>
+                </span>
+        
+                <!-- <a href="#" class="logo">iReporter</a> -->
+                <h1 class="logo"><span class="highlight-logo">i</span>Reporter</h1>
+                <ul class="main-nav" id="js-menu">
+
+                       <!-- <div class="profil eImage---1JOA5"><img src="https://gravatar.com/avatar/70464b248874b0c496d122baf2df1bff?s=200&amp;r=g&amp;d=https://s.pluralsight.com/sc/img/account/avatar-v2.png" alt="Photo of Admin"></div> -->
+                        
+        <li class="current">
+            <a href="admin-dashboard.html" class="nav-links"><i class="fa fa-home"></i>Home</a>
+        </li>
+        
+        <!-- <li >
+            <a href="#" class="nav-links"><i class="fa fa-history"></i>Records</a>
+        </li> -->
+        <li>
+            <a href="sign-in.html" class="nav-links"><i class="fa fa-sign-out"></i>Log out</a>
+        </li>
+        
+    </ul>
+</nav>
+
+<div class="header">
+    <h2 class="user-name"><i class="fa fa-user-circle"></i><br>Admin Dashboard</h2>
+    <!-- <h2 id="edit-record">ADMIN DASHBOARD</h2> -->
+    <div class="section-header">
+            <label for="filter">Filter:</label>
+            <select name="filter" id="filter">
+              <option value="all" selected="">All</option>
+              <option value="new">Drafts</option>
+              <option value="processing">Under Investigation</option>
+              <option value="cancelled">Resolved</option>
+              <option value="complete">Rejected</option>
+            </select>
+          </div>
+</div>
+
+<div class="app">
+        <!-- <div class="dash-welcome">
+            <h2 class="topform">Reports History</h2>
+        </div> -->
+        
+        <div class="reports-table">
+            <!-- WELCOME MESSAGE -->
+            <div class="history-table">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Reporter</th>
+                        <th>Type</th>
+                        <th>Title</th>
+                        <th>Location</th>
+                        <th>CreatedOn</th>
+                        <th>Status</th>
+                        <th>View</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>1223</td>
+                        <td>Harry Porter</td>
+                        <td>Red Flag</td>
+                        <td>Abuse of public funds</td>
+                        <td>lat:6.563200, lng:3.366590</td>
+                        <td>20/11/18 10:30am</td>
+                        <td>
+                            <select name="" id="">
+                                <option class="draft">Draft</option>
+                                <option class="processing">Under Investigation</option>
+                                <option class="success">Resolved</option>
+                                <option class="danger">Rejected</option>
+                            </select>
+                        </td>
+                        <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec tb-fa"></i></a></td>
+                    </tr>
+                    <tr>
+                         <td>1123</td>
+                         <td>John Doe</td>
+                        <td>Intervention</td>
+                        <td>Repair bad road sections</td>
+                        <td>lat:6.563200, lng:3.366590</td>
+                        <td>20/11/18 10:30am</td>
+                        <td>
+                            <select name="" id="">
+                                    <option class="draft">Draft</option>
+                                    <option class="processing">Under Investigation</option>
+                                    <option class="success">Resolved</option>
+                                    <option class="danger">Rejected</option>
+                            </select>
+                        </td>
+                        <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec tb-fa"></i></a></td>
+                    </tr>
+                    <tr>
+                         <td>1223</td>
+                         <td>Jacky Bin</td>
+                        <td>Red Flag</td>
+                        <td>Caught receiving bribe</td>
+                        <td>lat:6.563200, lng:3.366590</td>
+                        <td>20/11/18 10:30am</td>
+                        <td>
+                            <select name="" id="">
+                                <option class="processing">Under Investigation</option>
+                                <option class="draft">Draft</option>
+                                <option class="success">Resolved</option>
+                                <option class="danger">Rejected</option>
+                            </select>
+                        </td>
+                        <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec tb-view"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1223</td>
+                        <td>Rini Kono</td>
+                        <td>Intervention</td>
+                        <td>Flooding in Otutekpe</td>
+                        <td>lat:6.563200, lng:3.366590</td>
+                        <td>20/11/18 10:30am</td>
+                        <td>
+                            <select name="" id="">                                
+                                    <option class="draft">Draft</option>
+                                    <option class="processing">Under Investigation</option>
+                                    <option class="success">Resolved</option>
+                                    <option class="danger">Rejected</option>
+                            </select>
+                        </td>
+                        <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec tb-fa"></i></a></td>
+                    </tr>
+                    <tr>
+                         <td>1223</td>
+                         <td>Sinky Pat</td>
+                        <td>Red Flag</td>
+                        <td>Ghost worker</td>
+                        <td>lat:6.563200, lng:3.366590</td>
+                        <td>20/11/18 10:30am</td>
+                        <td>
+                            <select name="" id="">
+                                 <option class="danger">Rejected</option>
+                                 <option class="draft">Draft</option>
+                                 <option class="processing">Under Investigation</option>
+                                 <option class="success">Resolved</option>                               
+                            </select>
+                        </td>
+                        <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec "></i></a></td>
+                    </tr>
+
+                    <tr>
+                            <td>1223</td>
+                            <td>Cally Pally</td>
+                           <td>Red Flag</td>
+                           <td>Ghost worker</td>
+                           <td>lat:6.563200, lng:3.366590</td>
+                           <td>20/11/18 10:30am</td>
+                           <td>
+                               <select name="" id="">
+                                    <option class="success">Resolved</option>
+                                    <option class="draft">Draft</option>
+                                    <option class="processing">Under Investigation</option>
+                                    <option class="danger">Rejected</option>
+                                                                   
+                               </select>
+                           </td>
+                           <td class="td-action"><a href="admin-view-report.html"><i class="fa fa-eye btn-sec"></i></a></td>
+                       </tr>
+                    
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+            <div class="footer">
+                
+                <p>&copy; 2018. <span class="highlight-logo">i</span>Reporter</p>
+                <!-- <h1 class="logo"><span class="highlight-logo">i</span>Reporter</h1> -->
+                
+            </div>
+    </footer>
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
